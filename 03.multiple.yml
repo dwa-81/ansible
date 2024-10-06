@@ -11,5 +11,5 @@
    tasks: # list of tasks/module/collections
    - name: play 02 task 02
      ansible.builtin.debug:
-     msg: "this is from play 02 and task 02"
-     
+      msg: "this is from play 02 and task 02"
+      
