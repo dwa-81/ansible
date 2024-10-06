@@ -3,5 +3,5 @@
   tasks:
   - name: print the information
     ansible.builtin.debug:
-       msg: "Hi iam learning aws devops from one mongth"
-       
+       msg: "Hi iam learning aws devops from one month"
+
