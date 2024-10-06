@@ -1,5 +1,5 @@
 
- - name: plat 01 
+ - name: play 01 
    hosts: web    # which hosts your ansible server wants to connect
    tasks: # list of tasks/module/collections
    - name: play 01 task 01
@@ -12,4 +12,4 @@
    - name: play 02 task 02
      ansible.builtin.debug:
       msg: "this is from play 02 and task 02"
-      
+
