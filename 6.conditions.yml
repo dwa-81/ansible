@@ -2,10 +2,9 @@
   hosts: local
   connection: local
   vars_prompt:
-    vars_prompt:
-    - name: my_number
-      prompt: please enter the number
-      private: false # not confidential
+  - name: my_number
+    prompt: please enter the number
+    private: false # not confidential
   vars: 
     my_number: 130
   tasks: 
