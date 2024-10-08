@@ -5,10 +5,12 @@
   task:
   - name: install nginx
     ansible.builtin.package:
-     msg: "install inginx"
+     name: nginx
+     state: present
 
   - name: run the nginx
     ansible.builtin.service:
-     msg: "run nginx"
+     name: nginx
+     state: started
 
 
