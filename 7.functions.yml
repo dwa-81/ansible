@@ -11,5 +11,5 @@
     vars:
       greeting: "prashanth"
     ansinble.builtin.debug:
-        msg: "{{ greeting | upper }}"  
+        msg: " {{ greeting | upper }}"  
   
