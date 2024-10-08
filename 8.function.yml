@@ -1,19 +1,17 @@
 - name: demo functions
   hosts: frontend
-  connection: local
+  connection: frontend
   tasks:
-  
+  - name: convert to uppercase
+    vars:
+      greeting: "HELLO prashanth"
+    ansinble.builtin.debug:
+      msg: " {{ greeting | upper }}"
 
 
-- name: convert to uppercase
-  vars:
-    greeting: "HELLO prashanth"
-  ansinble.builtin.debug:
-    msg: " {{ greeting | upper }}"
-
-
-- name: convert to lowercase
-  vars:
-   greeting: "HELLO prashanth"
-  ansinble.builtin.debug:
-    msg: " {{ greeting | lower }}"
+  - name: convert to lowercase
+    vars:
+      greeting: "HELLO prashanth"
+    ansinble.builtin.debug:
+      msg: " {{ greeting | lower }}"
+      
