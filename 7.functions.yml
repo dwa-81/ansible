@@ -9,7 +9,7 @@
 
   - name: convert to uppercase
     vars:
-      greeting: "prashanth"
+      greeting: "hello prashanth"
     ansinble.builtin.debug:
-        msg: " {{ greeting | upper }}"  
+      msg: " {{ greeting | upper }}"  
   
