@@ -7,9 +7,9 @@
       msg: "hello {{ course | default('ansible') }}"
 
 
-  - name: write name
+  - name: convert to upper
     vars:
       human: "prashanth"
       ansinble.builtin.debug:
-        msg: "{{ human('prashanth') }}"  
+        msg: "{{ human('upper') }}"  
   
