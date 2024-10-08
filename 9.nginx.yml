@@ -1,0 +1,15 @@
+- name: install the nginx
+  hosts: frontend
+  connection: local
+  become: yes
+  task:
+  - name: install nginx
+    ansible.builtin.package:
+     msg: "install inginx"
+
+  - name: run the nginx
+    ansible.builtin.debug:
+     msg: "run nginx"
+
+
+     

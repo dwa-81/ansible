@@ -1,19 +1,22 @@
-- name: demo functions
+- name: demo of functions/filters
   hosts: frontend
   connection: local
-  tasks: 
-  - name:  task 01 and task 02
+  tasks:
+  - name: print the default variable
     ansible.builtin.debug:
+      msg: "hello {{ course | default('ansible') }}"
+
+
       
   - name: convert to uppercase
     vars:
       greeting: "HELLO prashanth"
-    ansinble.builtin.debug:
+    ansible.builtin.debug:
       msg: " {{ greeting | upper }}"
 
 
   - name: convert to lowercase
     vars:
       greeting: "HELLO prashanth"
-    ansinble.builtin.debug:
+    ansible.builtin.debug:
       msg: " {{ greeting | lower }}"
