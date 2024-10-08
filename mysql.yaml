@@ -1,5 +1,5 @@
-- name: install mysql-server
-  hosts: mysql.daw81.online
+- name: install mysql
+  hosts: mysql
   become: yes
   task: 
   - name: install mysql
@@ -7,4 +7,3 @@
       name: mysql-server
       state: present
 
-      
