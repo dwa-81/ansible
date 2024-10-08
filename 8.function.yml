@@ -1,7 +1,10 @@
 - name: demo functions
   hosts: frontend
-  connection: frontend
-  tasks:
+  connection: local
+  tasks: 
+  - name:  task 01 and task 02
+    ansible.builtin.debug:
+      
   - name: convert to uppercase
     vars:
       greeting: "HELLO prashanth"
@@ -14,4 +17,3 @@
       greeting: "HELLO prashanth"
     ansinble.builtin.debug:
       msg: " {{ greeting | lower }}"
-      
