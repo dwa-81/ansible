@@ -7,9 +7,9 @@
       msg: "hello {{ course | default('ansible') }}"
 
 
-  - name: name of user
+  - name: write name
     vars:
       human: "prashanth"
       ansinble.builtin.debug:
-        msg: "{{ prashanth | human('prashanth') }}"  
+        msg: "{{ human('prashanth') }}"  
   
