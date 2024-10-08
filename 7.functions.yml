@@ -10,6 +10,6 @@
   - name: convert to upper
     vars:
       human: "prashanth"
-      ansinble.builtin.debug:
+    ansinble.builtin.debug:
         msg: "{{ human('upper') }}"  
   
