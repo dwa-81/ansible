@@ -17,5 +17,3 @@
    greeting: "HELLO prashanth"
   ansinble.builtin.debug:
     msg: " {{ greeting | lower }}"
-
-
