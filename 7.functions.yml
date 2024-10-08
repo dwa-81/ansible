@@ -5,3 +5,11 @@
   - name: print the default variable
     ansible.builtin.debug:
       msg: "hello {{ course | default('ansible') }}"
+
+
+  - name: name of user
+    vars:
+      human: "prashanth"
+      ansinble.builtin.debug:
+        msg: "{{ prashanth | human('prashanth') }}"  
+  
