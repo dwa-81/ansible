@@ -1,0 +1,10 @@
+- name: install mysql-server
+  hosts: mysql.daw81.online
+  become: yes
+  task: 
+  - name: install mysql
+    ansible.builtin.package:
+      name: mysql-server
+      state: present
+
+      
